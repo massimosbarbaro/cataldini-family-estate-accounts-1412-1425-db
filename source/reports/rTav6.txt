@@ -1,0 +1,166 @@
+Version =19
+VersionRequired =19
+Checksum =234827621
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6777
+    DatasheetFontHeight =10
+    ItemSuffix =38
+    Left =3315
+    Top =330
+    Right =11790
+    Bottom =7605
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =563
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =1814
+                    Top =56
+                    Width =2355
+                    Height =375
+                    FontSize =14
+                    Name ="Etichetta28"
+                    Caption ="Tavola V: Il mulino"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =5889
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Width =3376
+                    Height =2941
+                    Name ="Grafico34"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Nuovo, Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali FRO"
+                        "M qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\") AND ((qEntrateUscite.Ge"
+                        "nere.Descrizione)=\"frumento\")) GROUP BY qEntrateUscite.Nuovo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3344
+                    Width =3376
+                    Height =2941
+                    TabIndex =1
+                    Name ="Grafico35"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Nuovo, Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali FRO"
+                        "M qEntrateUscite WHERE (((qEntrateUscite.Data)>\"1415\") AND ((qEntrateUscite.Es"
+                        "itoComm)=\"rendita\") AND ((qEntrateUscite.Genere.Descrizione)=\"frumento\")) GR"
+                        "OUP BY qEntrateUscite.Nuovo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =2948
+                    Width =3376
+                    Height =2941
+                    TabIndex =2
+                    Name ="Grafico36"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.Tipologia, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND ((VenditeRenditeMonetarie.EsitoComm)=\"ven"
+                        "dita\")) GROUP BY VenditeRenditeMonetarie.Tipologia;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3344
+                    Top =2948
+                    Width =3376
+                    Height =2941
+                    TabIndex =3
+                    Name ="Grafico37"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.Tipologia, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Esi"
+                        "toComm)=\"vendita\") AND ((VenditeRenditeMonetarie.Data) Like \"*16*\" Or (Vendi"
+                        "teRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRenditeMonetarie.Data) Like \""
+                        "*17*\") AND ((VenditeRenditeMonetarie.Descrizione)=\"frumento\")) GROUP BY Vendi"
+                        "teRenditeMonetarie.Tipologia;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =56
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

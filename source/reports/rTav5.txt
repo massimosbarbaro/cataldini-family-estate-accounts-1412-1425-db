@@ -1,0 +1,161 @@
+Version =19
+VersionRequired =19
+Checksum =234827587
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6519
+    DatasheetFontHeight =10
+    ItemSuffix =39
+    Left =600
+    Top =330
+    Right =8175
+    Bottom =6420
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =793
+            Name ="IntestazioneReport"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =1077
+                    Width =4425
+                    Height =735
+                    FontSize =14
+                    Name ="Etichetta3"
+                    Caption ="Tavola IV: Raffronto normalizzato \015\012ad un anno fra rendite cerealicole "
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="IntestazionePagina"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =5782
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Width =3181
+                    Height =2671
+                    Name ="Grafico12"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25].Nuovo, Sum([qREnditeNorm12-25].Norm) AS SommaDiNorm F"
+                        "ROM [qREnditeNorm12-25] GROUP BY [qREnditeNorm12-25].Nuovo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3288
+                    Width =3181
+                    Height =2671
+                    TabIndex =1
+                    Name ="Grafico36"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25].Nuovo, Sum([qREnditeNorm12-25].Norm) AS SommaDiNorm F"
+                        "ROM [qREnditeNorm12-25] GROUP BY [qREnditeNorm12-25].Nuovo HAVING ((([qREnditeNo"
+                        "rm12-25].Nuovo)=\"1412\" Or ([qREnditeNorm12-25].Nuovo)=\"1414-1415\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Top =2948
+                    Width =3181
+                    Height =2671
+                    TabIndex =2
+                    Name ="Grafico37"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25].Nuovo, Sum([qREnditeNorm12-25].Norm) AS SommaDiNorm F"
+                        "ROM [qREnditeNorm12-25] GROUP BY [qREnditeNorm12-25].Nuovo HAVING ((([qREnditeNo"
+                        "rm12-25].Nuovo)=\"1412\" Or ([qREnditeNorm12-25].Nuovo)=\"1416-1425\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3288
+                    Top =2948
+                    Width =3181
+                    Height =2671
+                    TabIndex =3
+                    Name ="Grafico38"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25].Nuovo, Sum([qREnditeNorm12-25].Norm) AS SommaDiNorm F"
+                        "ROM [qREnditeNorm12-25] GROUP BY [qREnditeNorm12-25].Nuovo HAVING ((([qREnditeNo"
+                        "rm12-25].Nuovo)=\"1414-1415\" Or ([qREnditeNorm12-25].Nuovo)=\"1416-1425\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PièDiPaginaReport"
+        End
+    End
+End

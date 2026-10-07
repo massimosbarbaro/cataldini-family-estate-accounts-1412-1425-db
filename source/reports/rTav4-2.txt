@@ -1,0 +1,568 @@
+Version =19
+VersionRequired =19
+Checksum =234827587
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6300
+    DatasheetFontHeight =10
+    ItemSuffix =77
+    Left =600
+    Top =330
+    Right =8355
+    Bottom =6885
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="IntestazioneReport"
+        End
+        Begin PageHeader
+            Height =375
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Width =6300
+                    Height =375
+                    FontSize =14
+                    Name ="Etichetta1"
+                    Caption ="Tavola III : Andamento delle rendite extra terram"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =18708
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Width =2551
+                    Height =1816
+                    Name ="Grafico49"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1416\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Width =2551
+                    Height =1816
+                    TabIndex =1
+                    Name ="Grafico57"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1417\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =1814
+                    Width =2551
+                    Height =1816
+                    TabIndex =2
+                    Name ="Grafico58"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1418\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =1814
+                    Width =2551
+                    Height =1816
+                    TabIndex =3
+                    Name ="Grafico59"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1419\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =3628
+                    Width =2551
+                    Height =1816
+                    TabIndex =4
+                    Name ="Grafico61"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1420\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =3628
+                    Width =2551
+                    Height =1816
+                    TabIndex =5
+                    Name ="Grafico62"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1421\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =5442
+                    Width =2551
+                    Height =1816
+                    TabIndex =6
+                    Name ="Grafico63"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1422\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =5442
+                    Width =2551
+                    Height =1816
+                    TabIndex =7
+                    Name ="Grafico64"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1423\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =7256
+                    Width =2551
+                    Height =1816
+                    TabIndex =8
+                    Name ="Grafico65"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1424\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =7256
+                    Width =2551
+                    Height =1816
+                    TabIndex =9
+                    Name ="Grafico66"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data HAVING ((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Ext"
+                        "ra].Data)=\"1425\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =9411
+                    Width =2551
+                    Height =1816
+                    TabIndex =10
+                    Name ="Grafico67"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] GROUP BY [qREnditeNorm12-25Extra]."
+                        "Data, [qREnditeNorm12-25Extra].Genere.Descrizione HAVING ((([qREnditeNorm12-25Ex"
+                        "tra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\"1416\") AND (([qREndite"
+                        "Norm12-25Extra].Genere.Descrizione) Like \"f*\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =9411
+                    Width =2551
+                    Height =1816
+                    TabIndex =11
+                    Name ="Grafico68"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1417\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =11225
+                    Width =2551
+                    Height =1816
+                    TabIndex =12
+                    Name ="Grafico69"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1418\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =11225
+                    Width =2551
+                    Height =1816
+                    TabIndex =13
+                    Name ="Grafico70"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1419\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =13040
+                    Width =2551
+                    Height =1816
+                    TabIndex =14
+                    Name ="Grafico71"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1420\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =13039
+                    Width =2551
+                    Height =1816
+                    TabIndex =15
+                    Name ="Grafico72"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1421\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =14854
+                    Width =2551
+                    Height =1816
+                    TabIndex =16
+                    Name ="Grafico73"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1422\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =14853
+                    Width =2551
+                    Height =1816
+                    TabIndex =17
+                    Name ="Grafico74"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1423\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =16668
+                    Width =2551
+                    Height =1816
+                    TabIndex =18
+                    Name ="Grafico75"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1424\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3004
+                    Top =16667
+                    Width =2551
+                    Height =1816
+                    TabIndex =19
+                    Name ="Grafico76"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-25Extra].Data, Sum([qREnditeNorm12-25Extra].Pesinali) AS "
+                        "SommaDiPesinali FROM [qREnditeNorm12-25Extra] WHERE ((([qREnditeNorm12-25Extra]."
+                        "Genere.Descrizione) Like \"f*\")) GROUP BY [qREnditeNorm12-25Extra].Data HAVING "
+                        "((([qREnditeNorm12-25Extra].Data)=\"1412\" Or ([qREnditeNorm12-25Extra].Data)=\""
+                        "1425\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PièDiPaginaReport"
+        End
+    End
+End

@@ -1,0 +1,234 @@
+Version =17
+VersionRequired =17
+Checksum =-234827645
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11103
+    DatasheetFontHeight =10
+    ItemSuffix =10
+    Left =600
+    Top =330
+    Right =8295
+    Bottom =7110
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =1134
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =1814
+                    Top =113
+                    Width =5775
+                    Height =870
+                    FontSize =36
+                    Name ="Etichetta3"
+                    Caption ="Rendite e Vendite"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =20409
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =283
+                    Width =5491
+                    Height =4306
+                    Name ="Grafico1"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\")) "
+                        "GROUP BY qEntrateUscite.Genere.Descrizione PIVOT qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =5612
+                    Top =4705
+                    Width =5491
+                    Height =4306
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1421\")) "
+                        "GROUP BY qEntrateUscite.Genere.Descrizione PIVOT qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =5612
+                    Top =283
+                    Width =5491
+                    Height =4306
+                    TabIndex =2
+                    Name ="Grafico5"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUsciteAccantonamento.Pesinali) AS SommaDiPesinali SELECT q"
+                        "EntrateUsciteAccantonamento.Genere.Descrizione FROM qEntrateUsciteAccantonamento"
+                        " WHERE (((qEntrateUsciteAccantonamento.Data)=\"1414-1415\")) GROUP BY qEntrateUs"
+                        "citeAccantonamento.Genere.Descrizione PIVOT qEntrateUsciteAccantonamento.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =9070
+                    Width =5491
+                    Height =4306
+                    TabIndex =3
+                    Name ="Grafico6"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1422-1425"
+                        "\" Or (qEntrateUscite.Data)=\"1422\" Or (qEntrateUscite.Data)=\"1423\" Or (qEntr"
+                        "ateUscite.Data)=\"1424\" Or (qEntrateUscite.Data)=\"1425\") AND (Not (qEntrateUs"
+                        "cite.Luogo.Descrizione)=\"Udine\")) GROUP BY qEntrateUscite.Genere.Descrizione, "
+                        "qEntrateUscite.Luogo.Descrizione PIVOT qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =5612
+                    Top =9070
+                    Width =5491
+                    Height =4306
+                    TabIndex =4
+                    Name ="Grafico7"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1416-1425"
+                        "\" Or (qEntrateUscite.Data)=\"1416-1418+1421\" Or (qEntrateUscite.Data)=\"1422-1"
+                        "425\" Or (qEntrateUscite.Data)=\"1417-1418+1421\") AND ((qEntrateUscite.Luogo.De"
+                        "scrizione)=\"udine\") AND ((qEntrateUscite.Tipologia.Descrizione)=\"mulino\" Or "
+                        "(qEntrateUscite.Tipologia.Descrizione)=\"livello\")) GROUP BY qEntrateUscite.Gen"
+                        "ere.Descrizione PIVOT qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =4705
+                    Width =5491
+                    Height =4306
+                    TabIndex =5
+                    Name ="Grafico8"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1416-1418"
+                        "\" Or (qEntrateUscite.Data)=\"1416\" Or (qEntrateUscite.Data)=\"1417\" Or (qEntr"
+                        "ateUscite.Data)=\"1418\") AND ((qEntrateUscite.Luogo.Descrizione)<>\"Udine\")) G"
+                        "ROUP BY qEntrateUscite.Genere.Descrizione, qEntrateUscite.Luogo.Descrizione PIVO"
+                        "T qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =13606
+                    Width =5491
+                    Height =4306
+                    TabIndex =6
+                    Name ="Grafico9"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUscite.Pesinali) AS SommaDiPesinali SELECT qEntrateUscite."
+                        "Genere.Descrizione FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1421\" Or"
+                        " (qEntrateUscite.Data)=\"1416-1418\" Or (qEntrateUscite.Data)=\"1416\" Or (qEntr"
+                        "ateUscite.Data)=\"1417\" Or (qEntrateUscite.Data)=\"1418\" Or (qEntrateUscite.Da"
+                        "ta)=\"1422-1425\" Or (qEntrateUscite.Data)=\"1422\" Or (qEntrateUscite.Data)=\"1"
+                        "423\" Or (qEntrateUscite.Data)=\"1424\" Or (qEntrateUscite.Data)=\"1425\") AND ("
+                        "(qEntrateUscite.Luogo.Descrizione)<>\"Udine\")) GROUP BY qEntrateUscite.Genere.D"
+                        "escrizione, qEntrateUscite.Luogo.Descrizione PIVOT qEntrateUscite.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =1134
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

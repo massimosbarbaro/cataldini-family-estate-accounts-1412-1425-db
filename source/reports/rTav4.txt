@@ -1,0 +1,229 @@
+Version =19
+VersionRequired =19
+Checksum =234827646
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6465
+    DatasheetFontHeight =10
+    ItemSuffix =22
+    Left =600
+    Top =330
+    Right =11730
+    Bottom =7125
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =431
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =113
+                    Top =56
+                    Width =6015
+                    Height =375
+                    FontSize =14
+                    Name ="Etichetta1"
+                    Caption ="Tavola III : Andamento delle rendite extra terram"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =9670
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =7029
+                    Width =6271
+                    Height =2641
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione) Not Like \"galline\" And "
+                        "([qTot16-25].Genere.Descrizione) Not Like \"vino\")) GROUP BY [qTot16-25].Data P"
+                        "IVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =56
+                    Width =3121
+                    Height =2221
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"frumento\")) GROUP BY ["
+                        "qTot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =3288
+                    Top =56
+                    Width =3121
+                    Height =2221
+                    TabIndex =2
+                    Name ="Grafico17"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"miglio\")) GROUP BY [qT"
+                        "ot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =2381
+                    Width =3121
+                    Height =2221
+                    TabIndex =3
+                    Name ="Grafico18"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"avena\")) GROUP BY [qTo"
+                        "t16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =3288
+                    Top =2381
+                    Width =3121
+                    Height =2221
+                    TabIndex =4
+                    Name ="Grafico19"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"vino\")) GROUP BY [qTot"
+                        "16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =56
+                    Top =4762
+                    Width =3121
+                    Height =2221
+                    TabIndex =5
+                    Name ="Grafico20"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"segale\")) GROUP BY [qT"
+                        "ot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    OverlapFlags =81
+                    Left =3288
+                    Top =4762
+                    Width =3121
+                    Height =2221
+                    TabIndex =6
+                    Name ="Grafico21"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"sorgo\")) GROUP BY [qTo"
+                        "t16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

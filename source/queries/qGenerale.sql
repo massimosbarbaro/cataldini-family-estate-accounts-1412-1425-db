@@ -1,0 +1,4 @@
+SELECT Generale.Data, Generale.EsitoComm, Luogo.Descrizione AS Luogo, Tipologia.Descrizione AS Tipologia, Genere.Descrizione AS Genere, Sum(Generale.Qta) AS SommaDiQta, Sum(Generale.Resto) AS SommaDiResto, Sum(Generale.QtaS) AS SommaDiQtaS, Sum(Generale.RestoS) AS SommaDiRestoS, Generale.Rapporo, Sum([qtas]*160+[restos]) AS Tot, Sum(IIf([genere].[Descrizione]='Vino' Or [genere].[Descrizione]='Galline',[qta],[qta]*6+[resto])) AS Pesinali, [rapporo]/6*[pesinali] AS CostoRApporto, [EsitoComm] & ' ' & [Tipologia].[Descrizione] & '. ' & [Luogo].[Descrizione] AS Tipo
+FROM ((Generale LEFT JOIN Genere ON Generale.IdGenere = Genere.IdGenere) LEFT JOIN Luogo ON Generale.IdLuogo = Luogo.IdLuogo) LEFT JOIN Tipologia ON Generale.IdTipologia = Tipologia.IdTipologia
+GROUP BY Generale.Data, Generale.EsitoComm, Luogo.Descrizione, Tipologia.Descrizione, Genere.Descrizione, Generale.Rapporo
+HAVING (((Generale.EsitoComm)="vendita" Or (Generale.EsitoComm)="rendita"));

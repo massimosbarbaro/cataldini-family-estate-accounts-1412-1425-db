@@ -1,0 +1,305 @@
+Version =17
+VersionRequired =17
+Checksum =-234827647
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15825
+    DatasheetFontHeight =10
+    ItemSuffix =15
+    Left =600
+    Top =330
+    Right =8055
+    Bottom =6870
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =2520
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =907
+                    Top =226
+                    Width =4125
+                    Height =450
+                    FontSize =18
+                    Name ="Etichetta1"
+                    Caption ="Rapporti Rendite Vendite"
+                End
+                Begin Label
+                    Left =5955
+                    Top =225
+                    Width =2550
+                    Height =2295
+                    Name ="Etichetta14"
+                    Caption ="SELECT [Tipologia] & [Esitocomm] AS Nuovo, Sum(VenditeRenditeMonetarie.Totale) A"
+                        "S SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Da"
+                        "ta) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRen"
+                        "diteMonetarie.Data) Like \"*17*\")) GROUP BY [Tipologia] & [Esitocomm]; "
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =11147
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =56
+                    Width =3916
+                    Height =3586
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie GROUP BY VenditeRenditeMonetarie.Dat"
+                        "a, VenditeRenditeMonetarie.EsitoComm HAVING (((VenditeRenditeMonetarie.Data)=\"1"
+                        "414-1415\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =4007
+                    Top =56
+                    Width =3916
+                    Height =3586
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =7958
+                    Top =56
+                    Width =3916
+                    Height =3586
+                    TabIndex =2
+                    Name ="Grafico3"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\")) GROUP"
+                        " BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =11909
+                    Top =56
+                    Width =3916
+                    Height =3586
+                    TabIndex =3
+                    Name ="Grafico4"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*25*\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =1133
+                    Top =3855
+                    Width =3916
+                    Height =3586
+                    TabIndex =4
+                    Name ="Grafico6"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND ((VenditeRenditeMonetarie.Tipologia) Not L"
+                        "ike \"mulino*\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5084
+                    Top =3855
+                    Width =3916
+                    Height =3586
+                    TabIndex =5
+                    Name ="Grafico7"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\") AND (("
+                        "VenditeRenditeMonetarie.Tipologia) Not Like \"mul*\")) GROUP BY VenditeRenditeMo"
+                        "netarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =9035
+                    Top =3855
+                    Width =3916
+                    Height =3586
+                    TabIndex =6
+                    Name ="Grafico8"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Tipologia) Not Like \"mul*\") AND ((VenditeRenditeMonetarie.Data) Like \"*2"
+                        "5*\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Label
+                    Left =170
+                    Top =4251
+                    Width =737
+                    Height =511
+                    Name ="Etichetta9"
+                    Caption ="Senza il Mulino"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =1133
+                    Top =7561
+                    Width =3916
+                    Height =3586
+                    TabIndex =7
+                    Name ="Grafico10"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND (([EsitoComm] & [Tipologia]) Like \"rendit"
+                        "a*\" Or ([EsitoComm] & [Tipologia]) Like \"*Mul*\")) GROUP BY VenditeRenditeMone"
+                        "tarie.EsitoComm HAVING (((VenditeRenditeMonetarie.EsitoComm)=\"rendita\" Or (Ven"
+                        "diteRenditeMonetarie.EsitoComm)=\"vendita\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5084
+                    Top =7561
+                    Width =3916
+                    Height =3586
+                    TabIndex =8
+                    Name ="Grafico11"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\") AND (("
+                        "[esitoComm] & [Tipologia]) Like \"ren*\" Or ([esitoComm] & [Tipologia]) Like \"*"
+                        "mul*\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =9035
+                    Top =7561
+                    Width =3916
+                    Height =3586
+                    TabIndex =9
+                    Name ="Grafico12"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*25*\") AND (([esitoComm] & [Tipologia]) Like \"ren*\" Or ([es"
+                        "itoComm] & [Tipologia]) Like \"*mul*\")) GROUP BY VenditeRenditeMonetarie.EsitoC"
+                        "omm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Label
+                    Left =170
+                    Top =7957
+                    Width =737
+                    Height =511
+                    Name ="Etichetta13"
+                    Caption ="Solo Mulino"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =1134
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

@@ -1,0 +1,4 @@
+SELECT Generale.Data, Generale.EsitoComm, Luogo.Descrizione AS Luogo, Tipologia.Descrizione AS Tipologia, Genere.Descrizione, Generale.QtaS, Generale.UmS, Generale.RestoS, Generale.UmRS, Generale.RestoP, Generale.UmRP, Generale.Rapporo, ([Qtas]*160)+[restos] AS Totale INTO VenditeRenditeMonetarie
+FROM Tipologia RIGHT JOIN (Luogo RIGHT JOIN (Genere RIGHT JOIN Generale ON Genere.IdGenere = Generale.IdGenere) ON Luogo.IdLuogo = Generale.IdLuogo) ON Tipologia.IdTipologia = Generale.IdTipologia
+GROUP BY Generale.Data, Generale.EsitoComm, Luogo.Descrizione, Tipologia.Descrizione, Genere.Descrizione, Generale.QtaS, Generale.UmS, Generale.RestoS, Generale.UmRS, Generale.RestoP, Generale.UmRP, Generale.Rapporo
+HAVING (((Generale.EsitoComm)="rendita" Or (Generale.EsitoComm)="vendita") AND ((([Qtas]*160)+[restos])>0));

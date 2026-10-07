@@ -1,0 +1,243 @@
+Version =19
+VersionRequired =19
+Checksum =234827587
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6362
+    DatasheetFontHeight =10
+    ItemSuffix =46
+    Left =3315
+    Top =330
+    Right =11550
+    Bottom =7365
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =396
+            Name ="IntestazioneReport"
+            GUID = Begin
+                ' (binary data omitted)
+            End
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =1474
+                    Width =3015
+                    Height =375
+                    FontSize =14
+                    Name ="Etichetta39"
+                    Caption ="Tav. I: Inventario 1412"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =9150
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Width =3061
+                    Height =2956
+                    Name ="Grafico40"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Genere.Descrizione, Sum(qEntrateUscite.Pesinali) AS SommaD"
+                        "iPesinali FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\")) GROUP BY "
+                        "qEntrateUscite.Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3287
+                    Width =3061
+                    Height =2956
+                    TabIndex =1
+                    Name ="Grafico41"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Genere.Descrizione, Sum(qEntrateUscite.Pesinali) AS SommaD"
+                        "iPesinali FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\") AND ((qEnt"
+                        "rateUscite.Luogo.Descrizione) Not Like \"udine\")) GROUP BY qEntrateUscite.Gener"
+                        "e.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =2948
+                    Width =3061
+                    Height =2956
+                    TabIndex =2
+                    Name ="Grafico42"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Tipologia.Descrizione, Sum(qEntrateUscite.Pesinali) AS Som"
+                        "maDiPesinali FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\") AND ((q"
+                        "EntrateUscite.Genere.Descrizione)=\"frumento\")) GROUP BY qEntrateUscite.Tipolog"
+                        "ia.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3287
+                    Top =2948
+                    Width =3061
+                    Height =2956
+                    TabIndex =3
+                    Name ="Grafico43"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Tipologia.Descrizione, Sum(qEntrateUscite.Pesinali) AS Som"
+                        "maDiPesinali FROM qEntrateUscite WHERE (((qEntrateUscite.Data)=\"1412\")) GROUP "
+                        "BY qEntrateUscite.Tipologia.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =5896
+                    Width =3061
+                    Height =2956
+                    TabIndex =4
+                    Name ="Grafico44"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.Tipologia, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a)=\"1412\") AND ((VenditeRenditeMonetarie.Luogo)=\"udine\")) GROUP BY VenditeRe"
+                        "nditeMonetarie.Tipologia;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3287
+                    Top =5896
+                    Width =3061
+                    Height =2956
+                    TabIndex =5
+                    Name ="Grafico45"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT IIf([Genere] Is Null,\"Moneta\",\"Natura\") AS Def, Sum(IIf([Genere]=\"Fr"
+                        "umento\",[Pesinali]*(90/6),IIf([Genere]=\"Avena\" Or [Genere]=\"Miglio\",[Pesina"
+                        "li]*(40/6),IIf([Genere]=\"Sorgo\",[Pesinali]*(20/6),IIf([Genere]=\"Segale\",[Pes"
+                        "inali]*(60/6),IIf([Genere]=\"vino\",[Pesinali]*40,[tot])))))) AS nuovo FROM qGen"
+                        "erale WHERE (((qGenerale.Data)=\"1412\")) GROUP BY IIf([Genere] Is Null,\"Moneta"
+                        "\",\"Natura\");"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =3287
+                    Top =8503
+                    Width =3075
+                    Height =330
+                    FontSize =6
+                    Name ="Etichetta32"
+                    Caption ="La conversione delle rendite in natura in valori monetari si fonda sui prezzi me"
+                        "di del periodo 1416-18."
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PièDiPaginaReport"
+            GUID = Begin
+                ' (binary data omitted)
+            End
+        End
+    End
+End

@@ -1,0 +1,213 @@
+Version =17
+VersionRequired =17
+Checksum =-234827647
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15884
+    DatasheetFontHeight =10
+    ItemSuffix =13
+    Left =600
+    Top =330
+    Right =11910
+    Bottom =7590
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =732
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =2324
+                    Top =56
+                    Width =9225
+                    Height =555
+                    FontSize =22
+                    Name ="Etichetta1"
+                    Caption ="Tavola V :Andamento delle rendite extrinseche"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =10449
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =2777
+                    Top =3231
+                    Width =10081
+                    Height =4036
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione) Not Like \"galline\" And "
+                        "([qTot16-25].Genere.Descrizione) Not Like \"vino\")) GROUP BY [qTot16-25].Data P"
+                        "IVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"frumento\")) GROUP BY ["
+                        "qTot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5272
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =2
+                    Name ="Grafico8"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"miglio\")) GROUP BY [qT"
+                        "ot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10601
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =3
+                    Name ="Grafico9"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"avena\")) GROUP BY [qTo"
+                        "t16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =170
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =4
+                    Name ="Grafico10"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"vino\")) GROUP BY [qTot"
+                        "16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5385
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =5
+                    Name ="Grafico11"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"segale\")) GROUP BY [qT"
+                        "ot16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10601
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =6
+                    Name ="Grafico12"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([qTot16-25].Pesinali) AS MaxDiPesinali SELECT [qTot16-25].Data FRO"
+                        "M [qTot16-25] WHERE ((([qTot16-25].Genere.Descrizione)=\"sorgo\")) GROUP BY [qTo"
+                        "t16-25].Data PIVOT [qTot16-25].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

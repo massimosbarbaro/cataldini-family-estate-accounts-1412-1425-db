@@ -1,0 +1,29 @@
+{
+  "title": "Cataldini: rents, sales and prices of an Udine family estate, 1412–1425 (db, 2002–2005)",
+  "upload_type": "dataset",
+  "publication_date": "2005-10-04",
+  "description": "<p><em>Rendite, vendite e prezzi del patrimonio della famiglia Cataldini di Udine, 1412–1425</em></p><p>The database reconstructs the income of the Cataldini da Fiorenza, a family of Tuscan origin settled in Udine, during the guardianship of the heir after the death of Petrus quondam Venuti Cataldini (1412–1425), years of war and of the passage of Friuli from the Patriarchate of Aquileia to Venice. It records rents in kind and in money from the mill, the livelli, land and house rents, inside and outside the city, the sales of produce and their prices. Queries and reports normalise quantities and values year by year and produce the tables and charts of the article written with Michele Zacchigna (see Related publication), including the detection of the arithmetical errors made by the compiler of the accounts.</p><p>Sources: Archivio di Stato di Udine, Archivio notarile antico, busta 3877, fascicolo 14 (inventarium bonorum, August 1412). Archivio di Stato di Udine, Archivio notarile antico, busta 5178, cc. 74–78v (rationes of the guardians, 1412–1425, examined by the deputati ad negocia pupillorum).</p><p>Database designed and compiled by Massimo Sbarbaro in 2002–2005.</p>",
+  "creators": [
+    {
+      "name": "Sbarbaro, Massimo",
+      "orcid": "0009-0006-8965-9013"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "medieval history",
+    "economic history",
+    "Friuli",
+    "Udine",
+    "rents",
+    "prices",
+    "family estate",
+    "database"
+  ],
+  "version": "2005",
+  "language": "eng",
+  "references": [
+    "Zacchigna, Michele, and Massimo Sbarbaro. 2005. \"»Propter guerram«. L'economia di una famiglia udinese nelle vicende del primo '400: i Cataldini da Fiorenza.\" Studi medievali, ser. 3a, 46 (2): 607–646."
+  ],
+  "notes": "Database compiled 2002–2005."
+}

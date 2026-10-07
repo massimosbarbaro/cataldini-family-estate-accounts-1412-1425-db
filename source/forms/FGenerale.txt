@@ -1,0 +1,518 @@
+Version =17
+VersionRequired =17
+Checksum =-234827537
+Begin Form
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9864
+    DatasheetFontHeight =10
+    ItemSuffix =32
+    Left =1650
+    Top =1050
+    Right =11805
+    Bottom =5400
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    RecordSource ="Generale"
+    Caption ="Generale"
+    BeforeInsert ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+        End
+        Begin Section
+            Height =4365
+            BackColor =-2147483633
+            Name ="Corpo"
+            Begin
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =968
+                    Top =113
+                    TabIndex =1
+                    Name ="txtIdGenerale"
+                    ControlSource ="IdGenerale"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =113
+                            Top =113
+                            Width =855
+                            Height =240
+                            Name ="Etichetta1"
+                            Caption ="IdGenerale"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =7086
+                    Top =56
+                    Name ="IdLuogo"
+                    ControlSource ="IdLuogo"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5159
+                            Top =56
+                            Width =660
+                            Height =240
+                            Name ="Etichetta5"
+                            Caption ="IdLuogo"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =7086
+                    Top =340
+                    TabIndex =2
+                    Name ="IdTipologia"
+                    ControlSource ="IdTipologia"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5159
+                            Top =340
+                            Width =855
+                            Height =240
+                            Name ="Etichetta7"
+                            Caption ="IdTipologia"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =7199
+                    Top =623
+                    TabIndex =5
+                    Name ="IdGenere"
+                    ControlSource ="IdGenere"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5272
+                            Top =623
+                            Width =735
+                            Height =240
+                            Name ="Etichetta9"
+                            Caption ="IdGenere"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =4185
+                    Top =1700
+                    Width =531
+                    TabIndex =9
+                    Name ="Qta"
+                    ControlSource ="Qta"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3855
+                            Top =1700
+                            Width =330
+                            Height =240
+                            Name ="Etichetta11"
+                            Caption ="Qta"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =6901
+                    Top =1700
+                    Width =636
+                    TabIndex =11
+                    Name ="Resto"
+                    ControlSource ="Resto"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =6406
+                            Top =1700
+                            Width =495
+                            Height =240
+                            Name ="Etichetta15"
+                            Caption ="Resto"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =87
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =851
+                    Top =1190
+                    Width =1927
+                    Height =226
+                    TabIndex =6
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"50\""
+                    Name ="CasellaCombinata18"
+                    ControlSource ="IdLuogo"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW [Luogo].[IdLuogo], [Luogo].[Descrizione] FROM [Luogo];"
+                    ColumnWidths ="0;1440"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =56
+                            Top =1190
+                            Width =795
+                            Height =240
+                            Name ="Luogo_Etichetta"
+                            Caption ="Luogo"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =87
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =4363
+                    Top =1190
+                    Width =1815
+                    Height =227
+                    TabIndex =7
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"50\""
+                    Name ="CasellaCombinata20"
+                    ControlSource ="IdTipologia"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW [Tipologia].[IdTipologia], [Tipologia].[Descrizione] FROM [Ti"
+                        "pologia];"
+                    ColumnWidths ="0;1440"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3628
+                            Top =1190
+                            Width =735
+                            Height =240
+                            Name ="Tipologia_Etichetta"
+                            Caption ="Tipologia"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =87
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =1673
+                    Top =1700
+                    Width =1814
+                    Height =223
+                    TabIndex =8
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"50\""
+                    Name ="CasellaCombinata22"
+                    ControlSource ="IdGenere"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW [Genere].[IdGenere], [Genere].[Descrizione] FROM [Genere];"
+                    ColumnWidths ="0;1440"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =113
+                            Top =1700
+                            Width =1560
+                            Height =240
+                            Name ="Genere_Etichetta"
+                            Caption ="Genere"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =5133
+                    Top =1700
+                    Width =1110
+                    TabIndex =10
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="Um"
+                    ControlSource ="Um"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.Um FROM Generale GROUP BY Generale.Um;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4818
+                            Top =1700
+                            Width =315
+                            Height =240
+                            Name ="Etichetta13"
+                            Caption ="Um"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =8201
+                    Top =1700
+                    Width =1050
+                    TabIndex =12
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="UmR"
+                    ControlSource ="UmR"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.UmR FROM Generale GROUP BY Generale.UmR;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7766
+                            Top =1700
+                            Width =435
+                            Height =240
+                            Name ="Etichetta17"
+                            Caption ="UmR"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =3224
+                    Top =453
+                    TabIndex =4
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="EsitoComm"
+                    ControlSource ="EsitoComm"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.EsitoComm FROM Generale GROUP BY Generale.EsitoComm;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =2324
+                            Top =453
+                            Width =900
+                            Height =240
+                            Name ="Etichetta24"
+                            Caption ="EsitoComm:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =1443
+                    Top =2664
+                    Width =546
+                    TabIndex =13
+                    Name ="QtaS"
+                    ControlSource ="QtaS"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =963
+                            Top =2664
+                            Width =480
+                            Height =240
+                            Name ="Etichetta25"
+                            Caption ="QtaS:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =4386
+                    Top =2664
+                    Width =531
+                    TabIndex =15
+                    Name ="RestoS"
+                    ControlSource ="RestoS"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3741
+                            Top =2664
+                            Width =645
+                            Height =240
+                            Name ="Etichetta27"
+                            Caption ="RestoS:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =4760
+                    Top =3344
+                    Width =4746
+                    TabIndex =19
+                    Name ="Rapporo"
+                    ControlSource ="Rapporo"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4025
+                            Top =3344
+                            Width =735
+                            Height =240
+                            Name ="Etichetta29"
+                            Caption ="Rapporo:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =7391
+                    Top =2664
+                    Width =621
+                    TabIndex =17
+                    Name ="RestoP"
+                    ControlSource ="RestoP"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =6746
+                            Top =2664
+                            Width =645
+                            Height =240
+                            Name ="Etichetta30"
+                            Caption ="RestoP:"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =8691
+                    Top =2664
+                    Width =786
+                    TabIndex =18
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="UmRP"
+                    ControlSource ="UmRP"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.UmRP FROM Generale GROUP BY Generale.UmRP;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =8106
+                            Top =2664
+                            Width =585
+                            Height =240
+                            Name ="Etichetta31"
+                            Caption ="UmRP:"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =2618
+                    Top =2664
+                    Width =966
+                    TabIndex =14
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="UmS"
+                    ControlSource ="UmS"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.UmS FROM Generale GROUP BY Generale.UmS;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =2153
+                            Top =2664
+                            Width =465
+                            Height =240
+                            Name ="Etichetta26"
+                            Caption ="UmS:"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =5687
+                    Top =2664
+                    Width =831
+                    TabIndex =16
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="UmRS"
+                    ControlSource ="UmRS"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.UmRS FROM Generale GROUP BY Generale.UmRS;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =5102
+                            Top =2664
+                            Width =585
+                            Height =240
+                            Name ="Etichetta28"
+                            Caption ="UmRS:"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    Left =533
+                    Top =453
+                    Width =1380
+                    TabIndex =3
+                    ColumnInfo ="\"\";\"\";\"10\";\"50\""
+                    Name ="Data"
+                    ControlSource ="Data"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Generale.Data FROM Generale GROUP BY Generale.Data;"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =113
+                            Top =453
+                            Width =420
+                            Height =240
+                            Name ="Etichetta3"
+                            Caption ="Data"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Form_BeforeInsert(Cancel As Integer)
+    Dim sqlc As String, rsNum As Recordset
+    Set db = CurrentDb
+    sqlc = "Select max([IdGenerale]) from Generale "
+    Set rsNum = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    If Not IsNull(rsNum(0)) Then
+        txtIdGenerale = rsNum(0) + 1
+    Else
+       txtIdGenerale = 1
+    End If
+'    txtCopie = 1
+'    cmdSalvaRec.Visible = True
+
+End Sub

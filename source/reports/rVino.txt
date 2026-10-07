@@ -1,0 +1,125 @@
+Version =19
+VersionRequired =19
+Checksum =234827585
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15805
+    DatasheetFontHeight =10
+    ItemSuffix =33
+    Left =600
+    Top =330
+    Right =8115
+    Bottom =6645
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =926
+            Name ="IntestazioneReport"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =3118
+                    Top =56
+                    Width =5775
+                    Height =870
+                    FontSize =36
+                    Name ="Etichetta14"
+                    Caption ="Tavola IV"
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="IntestazionePagina"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =10488
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =2154
+                    Top =5090
+                    Width =13201
+                    Height =4726
+                    Name ="Grafico31"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qGenerale.Data, Sum(qGenerale.Pesinali) AS SommaDiPesinali FROM qGenerale"
+                        " WHERE (((qGenerale.EsitoComm)=\"rendita\") AND ((qGenerale.Luogo)=\"extra\") AN"
+                        "D ((qGenerale.Genere)=\"vino\")) GROUP BY qGenerale.Data;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =2154
+                    Top =113
+                    Width =13201
+                    Height =4771
+                    TabIndex =1
+                    Name ="Grafico32"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qGenerale.Data, Sum(qGenerale.Pesinali) AS SommaDiPesinali FROM qGenerale"
+                        " WHERE (((qGenerale.EsitoComm)=\"rendita\") AND ((qGenerale.Luogo)=\"extra\") AN"
+                        "D ((qGenerale.Genere)=\"vino\")) GROUP BY qGenerale.Data;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PièDiPaginaReport"
+        End
+    End
+End

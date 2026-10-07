@@ -1,0 +1,363 @@
+Version =17
+VersionRequired =17
+Checksum =234827605
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15825
+    DatasheetFontHeight =10
+    ItemSuffix =24
+    Left =600
+    Top =330
+    Right =8055
+    Bottom =6870
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =1134
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =900
+                    Top =225
+                    Width =10530
+                    Height =450
+                    FontSize =18
+                    Name ="Etichetta1"
+                    Caption ="Rapporti Rendite Vendite rispetto al frumento, al vino ed al miglio"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =12884
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =340
+                    Width =3916
+                    Height =3586
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Des"
+                        "crizione) Is Null Or (VenditeRenditeMonetarie.Descrizione)=\"frumento\")) GROUP "
+                        "BY VenditeRenditeMonetarie.EsitoComm, VenditeRenditeMonetarie.Data HAVING (((Ven"
+                        "diteRenditeMonetarie.Data)=\"1414-1415\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =4007
+                    Top =340
+                    Width =3916
+                    Height =3586
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND ((VenditeRenditeMonetarie.Descrizione) Is "
+                        "Null Or (VenditeRenditeMonetarie.Descrizione)=\"frumento\")) GROUP BY VenditeRen"
+                        "diteMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =7958
+                    Top =340
+                    Width =3916
+                    Height =3586
+                    TabIndex =2
+                    Name ="Grafico3"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\") AND (("
+                        "VenditeRenditeMonetarie.Descrizione) Is Null Or (VenditeRenditeMonetarie.Descriz"
+                        "ione)=\"frumento\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =11909
+                    Top =340
+                    Width =3916
+                    Height =3586
+                    TabIndex =3
+                    Name ="Grafico4"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*25*\") AND ((VenditeRenditeMonetarie.Descrizione) Is Null Or "
+                        "(VenditeRenditeMonetarie.Descrizione)=\"frumento\")) GROUP BY VenditeRenditeMone"
+                        "tarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Label
+                    Left =283
+                    Top =4648
+                    Width =870
+                    Height =225
+                    Name ="Etichetta13"
+                    Caption ="Vino"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =4932
+                    Width =3916
+                    Height =3586
+                    TabIndex =4
+                    Name ="Grafico14"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Des"
+                        "crizione) Is Null Or (VenditeRenditeMonetarie.Descrizione)=\"vino\")) GROUP BY V"
+                        "enditeRenditeMonetarie.EsitoComm, VenditeRenditeMonetarie.Data HAVING (((Vendite"
+                        "RenditeMonetarie.Data)=\"1414-1415\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =4007
+                    Top =4932
+                    Width =3916
+                    Height =3586
+                    TabIndex =5
+                    Name ="Grafico15"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND ((VenditeRenditeMonetarie.Descrizione) Is "
+                        "Null Or (VenditeRenditeMonetarie.Descrizione)=\"vino\")) GROUP BY VenditeRendite"
+                        "Monetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =7958
+                    Top =4932
+                    Width =3916
+                    Height =3586
+                    TabIndex =6
+                    Name ="Grafico16"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\") AND (("
+                        "VenditeRenditeMonetarie.Descrizione) Is Null Or (VenditeRenditeMonetarie.Descriz"
+                        "ione)=\"vino\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =11909
+                    Top =4932
+                    Width =3916
+                    Height =3586
+                    TabIndex =7
+                    Name ="Grafico17"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*25*\") AND ((VenditeRenditeMonetarie.Descrizione) Is Null Or "
+                        "(VenditeRenditeMonetarie.Descrizione)=\"vino\")) GROUP BY VenditeRenditeMonetari"
+                        "e.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Label
+                    Left =113
+                    Top =56
+                    Width =870
+                    Height =225
+                    Name ="Etichetta18"
+                    Caption ="Frumento"
+                End
+                Begin Label
+                    Left =283
+                    Top =9014
+                    Width =870
+                    Height =225
+                    Name ="Etichetta19"
+                    Caption ="Miglio"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =9298
+                    Width =3916
+                    Height =3586
+                    TabIndex =8
+                    Name ="Grafico20"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Des"
+                        "crizione) Is Null Or (VenditeRenditeMonetarie.Descrizione)=\"miglio\")) GROUP BY"
+                        " VenditeRenditeMonetarie.EsitoComm, VenditeRenditeMonetarie.Data HAVING (((Vendi"
+                        "teRenditeMonetarie.Data)=\"1414-1415\"));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =4007
+                    Top =9298
+                    Width =3916
+                    Height =3586
+                    TabIndex =9
+                    Name ="Grafico21"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(VenditeRenditeMonetarie.Totale) AS"
+                        " SommaDiTotale FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonetarie.Dat"
+                        "a) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*25*\" Or (VenditeRend"
+                        "iteMonetarie.Data) Like \"*17*\") AND ((VenditeRenditeMonetarie.Descrizione) Is "
+                        "Null Or (VenditeRenditeMonetarie.Descrizione)=\"miglio\")) GROUP BY VenditeRendi"
+                        "teMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =7958
+                    Top =9298
+                    Width =3916
+                    Height =3586
+                    TabIndex =10
+                    Name ="Grafico22"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*16*\" Or (VenditeRenditeMonetarie.Data) Like \"*17*\") AND (("
+                        "VenditeRenditeMonetarie.Descrizione) Is Null Or (VenditeRenditeMonetarie.Descriz"
+                        "ione)=\"miglio\")) GROUP BY VenditeRenditeMonetarie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =11909
+                    Top =9298
+                    Width =3916
+                    Height =3586
+                    TabIndex =11
+                    Name ="Grafico23"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT VenditeRenditeMonetarie.EsitoComm, Sum(IIf([data]=\"1416-1425\",[Totale]/"
+                        "10*4,[Totale])) AS Tot FROM VenditeRenditeMonetarie WHERE (((VenditeRenditeMonet"
+                        "arie.Data) Like \"*25*\") AND ((VenditeRenditeMonetarie.Descrizione) Is Null Or "
+                        "(VenditeRenditeMonetarie.Descrizione)=\"miglio\")) GROUP BY VenditeRenditeMoneta"
+                        "rie.EsitoComm;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

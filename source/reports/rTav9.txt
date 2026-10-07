@@ -1,0 +1,467 @@
+Version =19
+VersionRequired =19
+Checksum =234827587
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6717
+    DatasheetFontHeight =10
+    ItemSuffix =40
+    Left =600
+    Top =330
+    Right =8730
+    Bottom =7545
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =375
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =340
+                    Width =5730
+                    Height =375
+                    FontSize =14
+                    Name ="Etichetta1"
+                    Caption ="Tavola VII: Andamento dei prezzi e realizzo"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =28573
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =4535
+                    Width =6541
+                    Height =2971
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Gene"
+                        "re_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Width =3316
+                    Height =2356
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"frumento\""
+                        ")) GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =14626
+                    Width =6526
+                    Height =2611
+                    TabIndex =2
+                    Name ="Grafico13"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali GROUP BY qVariazioniPrezz"
+                        "iPercentuali.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =9977
+                    Width =3271
+                    Height =2356
+                    TabIndex =3
+                    Name ="Grafico14"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"frumento\")) GROUP BY qVariazioniPrezziPercen"
+                        "tuali.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =113
+                    Top =19559
+                    Width =6496
+                    Height =2401
+                    TabIndex =4
+                    Name ="Grafico30"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Raffronto, Sum(qEntrateUscite.Pesinali) AS Pesinali, Sum(q"
+                        "EntrateUscite.Tot) AS Soldi FROM qEntrateUscite WHERE (((qEntrateUscite.EsitoCom"
+                        "m)=\"vendita\") AND ((qEntrateUscite.Luogo.Descrizione)=\"extra\")) GROUP BY qEn"
+                        "trateUscite.Raffronto ORDER BY qEntrateUscite.Raffronto DESC;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3401
+                    Width =3316
+                    Height =2356
+                    TabIndex =5
+                    Name ="Grafico22"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"miglio\")"
+                        ") GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =2267
+                    Width =3316
+                    Height =2356
+                    TabIndex =6
+                    Name ="Grafico23"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"avena\"))"
+                        " GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3401
+                    Top =2267
+                    Width =3316
+                    Height =2356
+                    TabIndex =7
+                    Name ="Grafico24"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"vino\")) "
+                        "GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =7313
+                    Width =3316
+                    Height =2356
+                    TabIndex =8
+                    Name ="Grafico25"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"segale\")"
+                        ") GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3401
+                    Top =7313
+                    Width =3316
+                    Height =2356
+                    TabIndex =9
+                    Name ="Grafico26"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"sorgo\"))"
+                        " GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3344
+                    Top =9977
+                    Width =3271
+                    Height =2356
+                    TabIndex =10
+                    Name ="Grafico27"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"miglio\")) GROUP BY qVariazioniPrezziPercentu"
+                        "ali.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =12302
+                    Width =3271
+                    Height =2356
+                    TabIndex =11
+                    Name ="Grafico28"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"avena\")) GROUP BY qVariazioniPrezziPercentua"
+                        "li.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3344
+                    Top =12302
+                    Width =3271
+                    Height =2356
+                    TabIndex =12
+                    Name ="Grafico29"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"vino\")) GROUP BY qVariazioniPrezziPercentual"
+                        "i.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Top =17177
+                    Width =3271
+                    Height =2356
+                    TabIndex =13
+                    Name ="Grafico33"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"segale\")) GROUP BY qVariazioniPrezziPercentu"
+                        "ali.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =3344
+                    Top =17177
+                    Width =3271
+                    Height =2356
+                    TabIndex =14
+                    Name ="Grafico34"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max(qVariazioniPrezziPercentuali.Var) AS MaxDiVar SELECT qVariazioniPr"
+                        "ezziPercentuali.Data FROM qVariazioniPrezziPercentuali WHERE (((qVariazioniPrezz"
+                        "iPercentuali.Genere_Descrizione)=\"sorgo\")) GROUP BY qVariazioniPrezziPercentua"
+                        "li.Data PIVOT qVariazioniPrezziPercentuali.Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =113
+                    Top =21713
+                    Width =6496
+                    Height =2401
+                    TabIndex =15
+                    Name ="Grafico36"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUscite.Raffronto, Sum(qEntrateUscite.Pesinali) AS Pesinali, Sum(q"
+                        "EntrateUscite.Tot) AS Soldi FROM qEntrateUscite WHERE (((qEntrateUscite.Genere.D"
+                        "escrizione)=\"frumento\") AND ((qEntrateUscite.EsitoComm)=\"vendita\") AND ((qEn"
+                        "trateUscite.Luogo.Descrizione)=\"extra\")) GROUP BY qEntrateUscite.Raffronto ORD"
+                        "ER BY qEntrateUscite.Raffronto DESC;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =113
+                    Top =23867
+                    Width =6496
+                    Height =2401
+                    TabIndex =16
+                    Name ="Grafico37"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUsciteVin.Raffronto, Sum(qEntrateUsciteVin.Pesinali) AS Conci, Su"
+                        "m(qEntrateUsciteVin.Tot) AS Soldi FROM qEntrateUsciteVin WHERE (((qEntrateUscite"
+                        "Vin.EsitoComm)=\"vendita\") AND ((qEntrateUsciteVin.Luogo.Descrizione)=\"extra\""
+                        ")) GROUP BY qEntrateUsciteVin.Raffronto ORDER BY qEntrateUsciteVin.Raffronto DES"
+                        "C;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =113
+                    Top =26022
+                    Width =6496
+                    Height =2401
+                    TabIndex =17
+                    Name ="Grafico38"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUsciteValore.Raffronto, Sum(qEntrateUsciteValore.Pesinali) AS Pes"
+                        "inali, Sum(qEntrateUsciteValore.Tot) AS Soldi, Sum(qEntrateUsciteValore.CostoRAp"
+                        "porto) AS [Soldi reali] FROM qEntrateUsciteValore WHERE (((qEntrateUsciteValore."
+                        "EsitoComm)=\"vendita\") AND ((qEntrateUsciteValore.Luogo.Descrizione)=\"extra\")"
+                        " AND ((qEntrateUsciteValore.Genere.Descrizione)<>\"vino\")) GROUP BY qEntrateUsc"
+                        "iteValore.Raffronto ORDER BY qEntrateUsciteValore.Raffronto DESC;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 2000"
+                    GUID = Begin
+                        ' (binary data omitted)
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

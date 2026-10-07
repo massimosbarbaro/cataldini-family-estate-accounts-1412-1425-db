@@ -1,0 +1,204 @@
+Version =17
+VersionRequired =17
+Checksum =234827605
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15884
+    DatasheetFontHeight =10
+    ItemSuffix =13
+    Left =600
+    Top =330
+    Right =8250
+    Bottom =7065
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageHeader
+            Height =732
+            Name ="IntestazionePagina"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =5555
+                    Width =4979
+                    Height =506
+                    FontSize =22
+                    Name ="Etichetta1"
+                    Caption ="Andamento dei prezzi"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =10449
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =2777
+                    Top =3231
+                    Width =10081
+                    Height =4036
+                    Name ="Grafico0"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Gene"
+                        "re_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =1
+                    Name ="Grafico2"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"frumento\""
+                        ")) GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5272
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =2
+                    Name ="Grafico8"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"miglio\")"
+                        ") GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10601
+                    Top =56
+                    Width =5056
+                    Height =3136
+                    TabIndex =3
+                    Name ="Grafico9"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"avena\"))"
+                        " GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =170
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =4
+                    Name ="Grafico10"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"vino\")) "
+                        "GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5385
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =5
+                    Name ="Grafico11"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"segale\")"
+                        ") GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10601
+                    Top =7313
+                    Width =5056
+                    Height =3136
+                    TabIndex =6
+                    Name ="Grafico12"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Max([16-25TotCosto].Rapporo) AS MaxDiRapporo SELECT [16-25TotCosto].Da"
+                        "ta FROM [16-25TotCosto] WHERE ((([16-25TotCosto].Genere_Descrizione)=\"sorgo\"))"
+                        " GROUP BY [16-25TotCosto].Data PIVOT [16-25TotCosto].Genere_Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+    End
+End

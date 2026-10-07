@@ -1,0 +1,203 @@
+Version =17
+VersionRequired =17
+Checksum =-234827647
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15419
+    DatasheetFontHeight =10
+    ItemSuffix =34
+    Left =600
+    Top =330
+    Right =10500
+    Bottom =8490
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        ' (binary data omitted)
+    End
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        ' (binary data omitted)
+    End
+    PrtDevMode = Begin
+        ' (binary data omitted)
+    End
+    PrtDevNames = Begin
+        ' (binary data omitted)
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =737
+            Name ="IntestazioneReport"
+            Begin
+                Begin Label
+                    TextFontFamily =34
+                    Left =5612
+                    Top =170
+                    Width =4170
+                    Height =450
+                    FontSize =18
+                    Name ="Etichetta28"
+                    Caption ="Tavola III: 1414 - 1415"
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="IntestazionePagina"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =9786
+            Name ="Corpo"
+            Begin
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =56
+                    Width =5041
+                    Height =4741
+                    Name ="Grafico11"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-15].Data, Sum([qREnditeNorm12-15].Norm) AS SommaDiNorm FR"
+                        "OM [qREnditeNorm12-15] GROUP BY [qREnditeNorm12-15].Data;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5217
+                    Top =56
+                    Width =5041
+                    Height =4741
+                    TabIndex =1
+                    Name ="Grafico30"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-15].Genere.Descrizione, Sum([qREnditeNorm12-15].Norm) AS "
+                        "SommaDiNorm FROM [qREnditeNorm12-15] WHERE ((([qREnditeNorm12-15].Data)=\"1414-1"
+                        "415\")) GROUP BY [qREnditeNorm12-15].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10378
+                    Top =56
+                    Width =5041
+                    Height =4741
+                    TabIndex =2
+                    Name ="Grafico31"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [qREnditeNorm12-15].Genere.Descrizione, Sum([qREnditeNorm12-15].Norm) AS "
+                        "SommaDiNorm FROM [qREnditeNorm12-15] WHERE ((([qREnditeNorm12-15].Data)=\"1412\""
+                        ")) GROUP BY [qREnditeNorm12-15].Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =56
+                    Top =5045
+                    Width =5491
+                    Height =4306
+                    TabIndex =3
+                    Name ="Grafico5"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="TRANSFORM Sum(qEntrateUsciteAccantonamento.Pesinali) AS SommaDiPesinali SELECT q"
+                        "EntrateUsciteAccantonamento.Genere.Descrizione FROM qEntrateUsciteAccantonamento"
+                        " WHERE (((qEntrateUsciteAccantonamento.Data)=\"1414-1415\")) GROUP BY qEntrateUs"
+                        "citeAccantonamento.Genere.Descrizione PIVOT qEntrateUsciteAccantonamento.Tipo;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =5896
+                    Top =5045
+                    Width =3976
+                    Height =4396
+                    TabIndex =4
+                    Name ="Grafico32"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qGenerale.EsitoComm, Sum(qGenerale.Tot) AS SommaDiTot FROM qGenerale WHER"
+                        "E (((qGenerale.Data)=\"1414-1415\")) GROUP BY qGenerale.EsitoComm HAVING (((Sum("
+                        "qGenerale.Tot))>0));"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+                Begin Chart
+                    ColumnHeads = NotDefault
+                    Locked = NotDefault
+                    RowSourceTypeInt =2
+                    Left =10378
+                    Top =4917
+                    Width =5041
+                    Height =4741
+                    TabIndex =5
+                    Name ="Grafico33"
+                    OleData = Begin
+                        ' (binary data omitted)
+                    End
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qEntrateUsciteGenerale.Genere.Descrizione, Sum(qEntrateUsciteGenerale.Tot"
+                        ") AS SommaDiTot FROM qEntrateUsciteGenerale WHERE (((qEntrateUsciteGenerale.Data"
+                        ")=\"1414-1415\") AND ((qEntrateUsciteGenerale.EsitoComm)=\"vendita\")) GROUP BY "
+                        "qEntrateUsciteGenerale.Genere.Descrizione;"
+                    Class ="MSGraph.Chart.8"
+                    OLEClass ="Grafico di Microsoft Graph 97"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PièDiPaginaPagina"
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PièDiPaginaReport"
+        End
+    End
+End

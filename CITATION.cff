@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this database, please cite it as below."
+type: dataset
+title: "Cataldini: rents, sales and prices of an Udine family estate, 1412–1425 (db, 2002–2005)"
+version: "2005"
+date-released: "2005-10-04"
+authors:
+  - family-names: Sbarbaro
+    given-names: Massimo
+    orcid: "https://orcid.org/0009-0006-8965-9013"
+license: CC-BY-4.0
+repository-code: "https://github.com/massimosbarbaro/cataldini-family-estate-accounts-1412-1425-db"
+keywords:
+  - "medieval history"
+  - "economic history"
+  - "Friuli"
+  - "Udine"
+  - "rents"
+  - "prices"
+  - "family estate"
+  - "database"
