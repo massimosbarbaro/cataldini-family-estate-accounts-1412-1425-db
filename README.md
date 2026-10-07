@@ -1,5 +1,7 @@
 # Cataldini: rents, sales and prices of an Udine family estate, 1412–1425
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23207791.svg)](https://doi.org/10.5281/zenodo.23207791)
+
 *Rendite, vendite e prezzi del patrimonio della famiglia Cataldini di Udine, 1412–1425*
 
 **db** · 2002–2005 · version 2005  
@@ -45,7 +47,7 @@ One *staio* = 6 *pesinali* (`Pesinali = Qta*6 + Resto`); one mark = 160 *soldi* 
 
 ## How to cite
 
-> Sbarbaro, Massimo. 2005. *Cataldini: rents, sales and prices of an Udine family estate, 1412–1425*. Dataset (db, 2002–2005), version 2005. Zenodo.
+> Sbarbaro, Massimo. 2005. *Cataldini: rents, sales and prices of an Udine family estate, 1412–1425*. Dataset (db, 2002–2005), version 2005. Zenodo. https://doi.org/10.5281/zenodo.23207791.
 
 ## License
 
